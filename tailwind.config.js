@@ -74,4 +74,7 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  backgroundImage: {
+    hero: 'url(/hero/hero-bg.png)'
+  },
 }
