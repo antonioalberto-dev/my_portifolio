@@ -33,12 +33,20 @@ const Hero = () => {
                   Contact me <MessagesSquareIcon size={18} />
                 </Button>
               </Link>
-              <Button className="gap-x-1" variant='secondary'>
+              <Button className="gap-x-1" variant="secondary">
                 Download CV <Download size={18} />
               </Button>
             </div>
+            <Socials
+              containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+              iconsStyles="text-foreground text-[22px] hover:text-primary dark:hover:text-primary transition-all"
+            />
           </div>
-          <div className="hidden xl:flex relative">img</div>
+          <div className="hidden xl:flex relative">
+            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2">
+              <DevImg containerStyles='bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom' imaSrc='/assets/hero/developer.png'/>
+            </div>
+          </div>
         </div>
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
           <RiArrowDownSLine className="text-3xl text-primary" />

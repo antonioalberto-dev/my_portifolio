@@ -1,8 +1,12 @@
-import React from 'react'
+'use client'
 
-const DevImg = () => {
+import Image from "next/image"
+
+const DevImg = ({containerStyles, imaSrc}) => {
   return (
-    <div>DevImg</div>
+    <div className={`${containerStyles}`}>
+      <Image src={imaSrc} fill priority/>
+    </div>
   )
 }
 
